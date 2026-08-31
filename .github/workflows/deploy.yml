@@ -18,6 +18,6 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            cd /opt/app
+            cd /opt/app/ai-rag
             git pull origin main
             docker compose up -d --build
